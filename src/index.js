@@ -10,6 +10,6 @@ import { createApp } from "./createApp.js";
 
 const app = await createApp()
 
-await mongoose.connect("mongodb://localhost:27017/cordonbleu")
+await mongoose.connect("mongodb://localhost:27017/pronos")
 //console.log("Connection reussi");
 app.listen(8080)
