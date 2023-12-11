@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPronos</title>
+  </head>
+
+  <body>
+   
+    <h1>Bienvenue sur MyPronos !</h1>
+    <section class="matchs">
+      <h2>Nos matchs</h2>
+    
+      <table>
+        <tr>
+            <td> <span> <%=match.team1%> </span></td>
+            <td> <span> <%=match.team2%> </span></td>
+        </tr>
+        <tr>
+            <form action="/pronos" method="post">
+                <td> 
+                    <input type="submit" value="Vote">
+                </td>
+                <td>
+                    <input type="submit" value="Vote">
+                </td> 
+            </form>
+        </tr>
+
+      </table>
+
+
+      
+        <a href="/matchs" class="match">
+            <span> Retour au menu principal </span>
+        </a>
+    </section>
+    <!-- <section class="addMatch">
+        <form action="/match" method="post">
+            <label for="team1">Equipe 1 :</label>
+            <input type="text" name="team1">
+            <label for="team2">Equipe 2 :</label>
+            <input type="text" name="team2">
+            <input type="submit" value="Creation d'un nouveau match">
+        </form>
+    </section> -->
+
+  </body>
+</html>
